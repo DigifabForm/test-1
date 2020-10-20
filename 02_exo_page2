@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href ="C:\Users\DELL06\Desktop\Nathan\Site web\css_code.css">
+</head>
+
+<body>
+
+<div class="topbar" id="maTopbar">
+  <a href="C:/Users/DELL06/Desktop/Nathan/Site%20web/02_exo.html" >Accueil</a>
+  <a href="C:\Users\DELL06\Desktop\Nathan\Site web\02_exo_page2.html"class="active">Contactez-moi</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("maTopbar");
+  if (x.className === "topbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topbar";
+  }
+}
+</script>
+<h1>Contactez-moi</h1>
+
+<h4 id="mail">Par mail:<a href="mailto:nathanbaudiquey@gmail.com">nathanbaudiquey@gmail.com</a></h4>
+<h1 class=a> OU </h1>
+<div class="container">
+  <form action="/action_page.php">
+   <div class="rangée">
+      <div class="gauche">
+      <label for="pnom">Prénom</label>
+    </div>
+  <div class="droite">
+        <input type="text" id="pnom" name="prenom" placeholder="Votre prénom..">
+      </div>
+    </div>
+ <div class="rangée">
+      <div class="gauche">
+     <label for="nom">Nom</label>
+      </div>
+ <div class="droite">
+        <input type="text" id="nom" name="nom" placeholder="Votre nom..">
+      </div>
+   </div>
+    
+<div class="rangée">
+      <div class="gauche">
+        <label for="subject">Sujet</label>
+      </div>
+<div class="droite">
+        <textarea id="sujet" name="sujet" placeholder="Ecrivez quelque chose.." style="height:120px"></textarea>
+      </div>
+</div>
+<div class="rangée">
+      <input type="envoyer" value="Envoyer">
+</div>
+  </form>
+</div>
+
+
+
+
+</body>
+</html>
